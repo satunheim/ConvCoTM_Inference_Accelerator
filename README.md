@@ -1,7 +1,7 @@
 # TsetlinMachine_accelerator_image_classification
 This repository includes VHDL source code for an FPGA implementation of a Convolutional Coalesced Tsetlin Machine-based Image Classification Accelerator. The solution is for inference-only and the model is fully programmable, for the given Tsetlin Machine configuration.
 
-The design represents the exact functionality of the ASIC reported in the paper "An All-digital 65-nm Tsetlin Machine Image Classification Accelerator with 8.6 nJ per MNIST Frame at 60.3k Frames per Second".
+The design represents the exact functionality of the ASIC reported in the paper  <i>"An All-digital 65-nm Tsetlin Machine Image Classification Accelerator with 8.6 nJ per MNIST Frame at 60.3k Frames per Second" </i>.
 
 A preprint of the paper can be found at: https://arxiv.org/abs/2501.19347
 
