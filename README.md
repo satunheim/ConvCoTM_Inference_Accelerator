@@ -3,11 +3,17 @@
 This repository includes VHDL source code for an FPGA implementation of a Convolutional Coalesced Tsetlin Machine (ConvCoTM) based image classification accelerator. The ConvCoTM configuration is as follows: 
 
 Image size: 28 x 28 pixels (booleanized)
+
 128 clauses
+
 10 classes
+
 10x10 convolution window
+
 The step size in x-direction is 1
+
 The step size in y-direction is 1
+
 Clause integer weights per class: (twos-complement representation of 8 bits)
 
 The solution is for inference-only, and the model for the given ConvCoTM configuration is fully programmable. The design represents the main functionality of the ASIC reported in the paper <i>"An All-digital 65-nm Tsetlin Machine Image Classification Accelerator with 8.6 nJ per MNIST Frame at 60.3k Frames per Second" </i>. A preprint of the paper can be found at: https://arxiv.org/abs/2501.19347.
