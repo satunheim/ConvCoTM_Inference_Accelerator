@@ -10,7 +10,7 @@ Image size: 28 x 28 pixels (booleanized)
 
 Number of clauses: 128
 
-Number of clauses:  10 
+Number of classes:  10 
 
 Convolution window: 10 x 10
 
