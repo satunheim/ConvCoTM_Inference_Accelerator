@@ -1,18 +1,20 @@
-# Coalesced_Tsetlin_Machine_ConvCoTM_Inference_Image_Classification_Accelerator
+# ConvCoTM_Inference_Accelerator
+
+## Convolutional Coalesced Tsetlin Machine (ConvCoTM) Inference Image Classification Accelerator
 
 This repository includes VHDL source code for an FPGA implementation of a Convolutional Coalesced Tsetlin Machine (ConvCoTM) based image classification accelerator. The ConvCoTM configuration is as follows: 
 
 Image size: 28 x 28 pixels (booleanized)
 
-128 clauses
+Number of clauses: 128
 
-10 classes
+Number of clauses:  10 
 
-10x10 convolution window
+Convolution window: 10 x 10
 
-The step size in x-direction is 1
+X-direction step size: 1
 
-The step size in y-direction is 1
+Y-direction step size: 1
 
 Clause integer weights per class: 8 bits (two's-complement representation)
 
