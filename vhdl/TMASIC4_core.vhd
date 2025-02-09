@@ -7,7 +7,7 @@ library lib_convcotm;
 use lib_convcotm.ff.all;
 use lib_convcotm.SETTINGS_ConvCoTM.all;
 
-entity TMASIC_core is
+entity TMASIC4_core is
     Port ( -- There are 28 signal pins in total 
             i_clks                      : in std_logic; -- to inference part
             i_clkl                      : in std_logic; -- to model part
@@ -34,10 +34,10 @@ entity TMASIC_core is
             -- Actual and predicted classes:
             o_result                    : out std_logic_vector(7 downto 0) 
             );
-end TMASIC_core;
+end TMASIC4_core;
 -----------------------------------------------------------------------------------------------------
 
-architecture rtl of TMASIC_core is
+architecture rtl of TMASIC4_core is
     
     signal w_in_sync1s                          : std_logic_vector(3 downto 0);
     signal w_out_sync1s                         : std_logic_vector(3 downto 0);
