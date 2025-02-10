@@ -124,52 +124,52 @@ begin
           -- file path names must be modified according to exact locations.
          
           --MNIST images : test dataset (10k samples)
-          file text_file2 : text open read_mode is "C:\Users\satun\OneDrive\Dokumenter\TMASIC4\MNIST_data\MNIST_test_10ksamples.txt";
+          file text_file2 : text open read_mode is "C:\...............\MNIST_test_10ksamples.txt";
           variable text_line2 : line;
           variable var_imagedata2 : std_logic_vector(7 downto 0);
          
           -- Model files: Includes/Excludes + 10 sets of weights (one per class)
-          file modelfile_ie : text open read_mode is "C:\Users\satun\OneDrive\Dokumenter\TMASIC4\model_128_MNIST\ie.txt";
+          file modelfile_ie : text open read_mode is "C:\...............\model_128_MNIST\ie.txt";
           variable line_ie : line;
           variable var_ie : std_logic_vector(7 downto 0);
          
-          file modelfile_wclass0 : text open read_mode is "C:\Users\satun\OneDrive\Dokumenter\TMASIC4\model_128_MNIST\wclass0.txt";
+          file modelfile_wclass0 : text open read_mode is "C:\...............\wclass0.txt";
           variable line_wclass0  : line;
           variable var_wclass0   : std_logic_vector(7 downto 0);
          
-          file modelfile_wclass1 : text open read_mode is "C:\Users\satun\OneDrive\Dokumenter\TMASIC4\model_128_MNIST\wclass1.txt";
+          file modelfile_wclass1 : text open read_mode is "C:\...............\wclass1.txt";
           variable line_wclass1  : line;
           variable var_wclass1   : std_logic_vector(7 downto 0);
          
-          file modelfile_wclass2 : text open read_mode is "C:\Users\satun\OneDrive\Dokumenter\TMASIC4\model_128_MNIST\wclass2.txt";
+          file modelfile_wclass2 : text open read_mode is "C:\...............\wclass2.txt";
           variable line_wclass2  : line;
           variable var_wclass2   : std_logic_vector(7 downto 0);
          
-          file modelfile_wclass3 : text open read_mode is "C:\Users\satun\OneDrive\Dokumenter\TMASIC4\model_128_MNIST\wclass3.txt";
+          file modelfile_wclass3 : text open read_mode is "C:\...............\wclass3.txt";
           variable line_wclass3  : line;
           variable var_wclass3   : std_logic_vector(7 downto 0);
          
-          file modelfile_wclass4 : text open read_mode is "C:\Users\satun\OneDrive\Dokumenter\TMASIC4\model_128_MNIST\wclass4.txt";
+          file modelfile_wclass4 : text open read_mode is "C:\...............\wclass4.txt";
           variable line_wclass4  : line;
           variable var_wclass4   : std_logic_vector(7 downto 0);
          
-          file modelfile_wclass5 : text open read_mode is "C:\Users\satun\OneDrive\Dokumenter\TMASIC4\model_128_MNIST\wclass5.txt";
+          file modelfile_wclass5 : text open read_mode is "C:\...............\wclass5.txt";
           variable line_wclass5  : line;
           variable var_wclass5   : std_logic_vector(7 downto 0);
          
-          file modelfile_wclass6 : text open read_mode is "C:\Users\satun\OneDrive\Dokumenter\TMASIC4\model_128_MNIST\wclass6.txt";
+          file modelfile_wclass6 : text open read_mode is "C:\...............\wclass6.txt";
           variable line_wclass6  : line;
           variable var_wclass6   : std_logic_vector(7 downto 0);
          
-          file modelfile_wclass7 : text open read_mode is "C:\Users\satun\OneDrive\Dokumenter\TMASIC4\model_128_MNIST\wclass7.txt";
+          file modelfile_wclass7 : text open read_mode is "C:\...............\wclass7.txt";
           variable line_wclass7  : line;
           variable var_wclass7   : std_logic_vector(7 downto 0);
          
-          file modelfile_wclass8 : text open read_mode is "C:\Users\satun\OneDrive\Dokumenter\TMASIC4\model_128_MNIST\wclass8.txt";
+          file modelfile_wclass8 : text open read_mode is "C:\...............\wclass8.txt";
           variable line_wclass8  : line;
           variable var_wclass8   : std_logic_vector(7 downto 0);
          
-          file modelfile_wclass9 : text open read_mode is "C:\Users\satun\OneDrive\Dokumenter\TMASIC4\model_128_MNIST\wclass9.txt";
+          file modelfile_wclass9 : text open read_mode is "C:\...............\wclass9.txt";
           variable line_wclass9  : line;
           variable var_wclass9   : std_logic_vector(7 downto 0);
  
