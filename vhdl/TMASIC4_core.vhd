@@ -8,7 +8,7 @@ use lib_convcotm.ff.all;
 use lib_convcotm.SETTINGS_ConvCoTM.all;
 
 entity TMASIC4_core is
-    Port ( -- There are 28 signal pins in total 
+    Port ( 
             i_clks                      : in std_logic; -- to inference part
             i_clkl                      : in std_logic; -- to model part
             
