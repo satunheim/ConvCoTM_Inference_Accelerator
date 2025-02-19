@@ -25,7 +25,8 @@ entity TMASIC4_core is
 
             -- Slave interface:
             i_data_valid                : in std_logic; -- connected to synchronizer2 module
-            i_data                      : in std_logic_vector(7 downto 0); -- connected to synchronizer2 module
+            i_data                      : in std_logic_vector(7 downto 0); 
+                                                        -- connected to synchronizer2 module
              
             -- Interrupts:
             o_intrs                     : out std_logic; -- Inference finished
