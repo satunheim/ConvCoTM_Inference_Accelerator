@@ -24,7 +24,7 @@ Clause integer weights per class: 8 bits (two's-complement representation)
 
 ------------------------------------------------------------------------------------------------
 
-The solution is for inference operation, and the model for the given ConvCoTM configuration is fully programmable. The VHDL design is the exact basis for the implementation of the application-specific integrated circuit (ASIC) reported in the paper <i>"An All-digital 65-nm Tsetlin Machine Image Classification Accelerator with 8.6 nJ per MNIST Frame at 60.3k Frames per Second"</i>. (The only exception is that the clause switching reduction feedback is not included.) A preprint of the paper can be found at: https://arxiv.org/abs/2501.19347.
+The solution is for inference operation, and the model for the given ConvCoTM configuration is fully programmable. The VHDL design is the exact basis for the implementation of the application-specific integrated circuit (ASIC) reported in the paper <i>"An All-digital 8.6-nJ/Frame 65-nm Tsetlin Machine Image Classification Accelerator"</i>. (The only exception is that the clause switching reduction feedback is not included.) A preprint of the paper can be found at: https://arxiv.org/abs/2501.19347.
 
 The coding style applied for the VHDL designs is based on Appendix A in <i>"Digital Design Using VHDL: A Systems Approach"</i>, Dally William J. Harting R. Curtis Aamodt Tor M., Cambrige University Press, 2016. In particular, the principle that <i>"All state should be in explicitly declared registers"</i> has been carefully followed.
 
