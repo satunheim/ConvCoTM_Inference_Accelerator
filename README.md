@@ -1,8 +1,8 @@
-# ConvCoTM_Inference_Accelerator
+#ConvCoTM_Inference_Accelerator
 
 ------------------------------------------------------------------------------------------------
 
-## Convolutional Coalesced Tsetlin Machine (ConvCoTM) Inference Image Classification Accelerator
+##Convolutional Coalesced Tsetlin Machine (ConvCoTM) Inference Image Classification Accelerator
 
 ------------------------------------------------------------------------------------------------
 
@@ -24,7 +24,7 @@ Clause integer weights per class: 8 bits (two's-complement representation)
 
 ------------------------------------------------------------------------------------------------
 
-The solution is for inference operation, and the model for the given ConvCoTM configuration is fully programmable. The VHDL design is the exact basis for the implementation of the application-specific integrated circuit (ASIC) reported in the paper <i>"An All-digital 8.6-nJ/Frame 65-nm Tsetlin Machine Image Classification Accelerator"</i>. (The only exception is that the clause switching reduction feedback is not included.) A preprint of the paper can be found at: https://arxiv.org/abs/2501.19347.
+The solution is for inference operation, and the model for the given ConvCoTM configuration is fully programmable. The VHDL design is the exact basis for the implementation of the application-specific integrated circuit (ASIC) reported in the paper <i>An All-digital 8.6-nJ/Frame 65-nm Tsetlin Machine Image Classification Accelerator</i>. (The only exception is that the clause switching reduction feedback is not included.) A preprint of the paper can be found at: https://arxiv.org/abs/2501.19347.
 
 The coding style applied for the VHDL designs is based on Appendix A in <i>"Digital Design Using VHDL: A Systems Approach"</i>, Dally William J. Harting R. Curtis Aamodt Tor M., Cambrige University Press, 2016. In particular, the principle that <i>"All state should be in explicitly declared registers"</i> has been carefully followed.
 
@@ -35,3 +35,12 @@ FPGA block diagram, FPGA IP module configuration settings and C-program for oper
 In https://doi.org/10.48550/arXiv.2108.07594 the Coalesced Tsetlin Machine (CoTM) is presented.
 
 The MNIST data samples included in this repository, are booleanized by simple thresholding. I.e., pixel values above 75 are set to 1 and to 0 otherwise. The original MNIST dataset is found at https://yann.lecun.com/exdb/mnist/. Each booleanized MNIST image requires 98 bytes plus one byte for the label. In addition, 29 bytes of value 0 have been added to each sample, totalling 128 bytes per image, which is necessary for the reading of image data via the DMA for this FPGA solution.
+
+##Related work
+
+In the article <i>Model Export for the Convolutional Coalesced Tsetlin Machine</i>, available at 
+https://ieeexplore.ieee.org/document/10455048, it is described how to export a model from a trained ConvCoTM from the Tsetlin Machine Unified (TMU) GitHub repository: https://github.com/cair/tmu. 
+
+The repository at https://github.com/satunheim/ConvCoTM-FPGA-28x28 includes the source code for an FPGA implementation of a ConvCoTM-based image classification accelerator with <i>on-device training</i>. This accelerator is described in the paper  <i>Tsetlin Machine-Based Image Classification FPGA Accelerator With On-Device Training</i> at https://ieeexplore.ieee.org/document/10812055. The inference part of the ASIC implementation, was based on the FPGA solution. 
+
+
