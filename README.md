@@ -1,8 +1,8 @@
-#ConvCoTM_Inference_Accelerator
+# ConvCoTM_Inference_Accelerator
 
 ------------------------------------------------------------------------------------------------
 
-##Convolutional Coalesced Tsetlin Machine (ConvCoTM) Inference Image Classification Accelerator
+## Convolutional Coalesced Tsetlin Machine (ConvCoTM) Inference Image Classification Accelerator
 
 ------------------------------------------------------------------------------------------------
 
@@ -36,7 +36,7 @@ In https://doi.org/10.48550/arXiv.2108.07594 the Coalesced Tsetlin Machine (CoTM
 
 The MNIST data samples included in this repository, are booleanized by simple thresholding. I.e., pixel values above 75 are set to 1 and to 0 otherwise. The original MNIST dataset is found at https://yann.lecun.com/exdb/mnist/. Each booleanized MNIST image requires 98 bytes plus one byte for the label. In addition, 29 bytes of value 0 have been added to each sample, totalling 128 bytes per image, which is necessary for the reading of image data via the DMA for this FPGA solution.
 
-##Related work
+## Related work
 
 In the article <i>Model Export for the Convolutional Coalesced Tsetlin Machine</i>, available at 
 https://ieeexplore.ieee.org/document/10455048, it is described how to export a model from a trained ConvCoTM from the Tsetlin Machine Unified (TMU) GitHub repository: https://github.com/cair/tmu. 
